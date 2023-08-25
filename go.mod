@@ -1,4 +1,4 @@
-module github/erdemakyildiz/audit-log-client
+module github.com/erdemakyildiz/audit-log-client
 
 go 1.19
 

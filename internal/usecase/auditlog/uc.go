@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/erdemakyildiz/audit-log-client/internal/core/domain"
 	"github.com/nats-io/nats.go"
-	"github/erdemakyildiz/audit-log-client/internal/core/domain"
 )
 
 type UseCase struct {

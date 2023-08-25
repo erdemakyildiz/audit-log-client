@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/erdemakyildiz/audit-log-client/internal/core/domain"
+	"github.com/erdemakyildiz/audit-log-client/internal/port/auditlog"
 	"github.com/nats-io/nats.go"
-	"github/erdemakyildiz/audit-log-client/internal/core/domain"
-	"github/erdemakyildiz/audit-log-client/internal/port/auditlog"
 	"sync"
 )
 

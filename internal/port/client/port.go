@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"github/erdemakyildiz/audit-log-client/internal/core/domain"
+	"github.com/erdemakyildiz/audit-log-client/internal/core/domain"
 )
 
 type UseCase interface {

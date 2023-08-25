@@ -1,11 +1,11 @@
 package auditlog
 
 import (
-	"audit-log-client/internal/core/domain"
 	"context"
 	"encoding/json"
 	"fmt"
 	"github.com/nats-io/nats.go"
+	"github/erdemakyildiz/audit-log-client/internal/core/domain"
 )
 
 type UseCase struct {

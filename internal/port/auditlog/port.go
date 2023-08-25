@@ -1,8 +1,8 @@
 package auditlog
 
 import (
-	"audit-log-client/internal/core/domain"
 	"context"
+	"github/erdemakyildiz/audit-log-client/internal/core/domain"
 )
 
 type UseCase interface {

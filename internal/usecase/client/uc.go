@@ -1,12 +1,12 @@
 package client
 
 import (
-	"audit-log-client/internal/core/domain"
-	"audit-log-client/internal/port/auditlog"
 	"context"
 	"errors"
 	"fmt"
 	"github.com/nats-io/nats.go"
+	"github/erdemakyildiz/audit-log-client/internal/core/domain"
+	"github/erdemakyildiz/audit-log-client/internal/port/auditlog"
 	"sync"
 )
 

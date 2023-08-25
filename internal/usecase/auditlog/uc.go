@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/erdemakyildiz/audit-log-client/internal/core/domain"
+	"github.com/erdemakyildiz/audit-log-client/internal"
 	"github.com/nats-io/nats.go"
 )
 
@@ -16,7 +16,7 @@ func New(nc *nats.Conn) *UseCase {
 	return &UseCase{nc: nc}
 }
 
-func (uc *UseCase) PublishAuditLog(ctx context.Context, log domain.AuditLog) error {
+func (uc *UseCase) PublishAuditLog(ctx context.Context, log internal.AuditLog) error {
 	auditLog, err := json.Marshal(log)
 	if err != nil {
 		return fmt.Errorf("error marshal audit log: %w", err)

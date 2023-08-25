@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/erdemakyildiz/audit-log-client/internal/core/domain"
+	"github.com/erdemakyildiz/audit-log-client/internal"
 	"github.com/erdemakyildiz/audit-log-client/internal/port/auditlog"
 	"github.com/nats-io/nats.go"
 	"sync"
@@ -34,7 +34,7 @@ func getInstance() *UseCase {
 	return clientInstance
 }
 
-func (uc *UseCase) CreateAuditLog(ctx context.Context, log domain.AuditLog) (bool, error) {
+func (uc *UseCase) CreateAuditLog(ctx context.Context, log internal.AuditLog) (bool, error) {
 	if log.Data.Event.EventCategory == "" {
 		return false, errors.New("event category can not be empty")
 	}

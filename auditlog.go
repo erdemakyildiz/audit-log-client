@@ -18,7 +18,7 @@ type Client struct {
 
 var client *Client
 
-func getInstance(nc *nats.Conn) *Client {
+func GetInstance(nc *nats.Conn) *Client {
 	if client == nil {
 		lock.Lock()
 		defer lock.Unlock()
